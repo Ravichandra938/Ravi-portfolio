@@ -226,6 +226,14 @@
         <section class="contact" id="contact">
             <h2 class="heading">Contact<span>Me!</span><span class="animate scroll" style="--i:1;"></span></h2>
             <form action="https://formsubmit.co/2e6726bddf28c66c8118a53d0be7c51d" method="POST">
+                <!--honeypot-->
+                <input type="text" name="_honey" style="display:none;">
+
+                <!--Disable Captcha-->
+                <input type="hidden" name="_captcha" value="false">
+
+                <input type="hidden" name="_next" value="success.html">
+
                 <div class="input-box">
                     <div class="input-field">
                         <input type="text" name="Name" placeholder="Full Name" required>
